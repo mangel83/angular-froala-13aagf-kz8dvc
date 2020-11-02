@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<div [froalaEditor]="froalaOptions" [(froalaModel)]="firstModel.details"></div>
+
+<div [froalaEditor]="froalaOptions" [(froalaModel)]="model.details"></div>
+<h3>Model-Binding-Check:</h3>
+<h4>First</h4>
+<p>{{firstModel.details}}</p>
+<h4>Second</h4>
+<p>{{model.details}}</p>
+<button (click)="newModel()">New Model</button>
